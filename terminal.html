@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="style.css>
+    <style>
+        .terminal-container {
+            position: relative;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        .terminal-header {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #000;
+            color: #019394;
+            padding: 0 10px;
+            font-size: 18px;
+            z-index: 3;
+        }
+
+        .terminal-window {
+            background: rgba(0, 0, 0, 0.85);
+            border: 1px solid rgba(1, 147, 148, 100);
+            border-radius: 10px;
+            width: 100%;
+            height: 60vh;
+            padding: 20px;
+            color: #019394;
+            font-family: monospace;
+            overflow: auto;
+            font-size: 14px;
+        }
+
+        #terminal-output {
+            margin-top: 10px;
+        }
+
+        .cursor {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .command-line {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .input-area {
+            background: transparent;
+            border: none;
+            color: #019394;
+            font-family: monospace;
+            font-size: inherit;
+            margin-left: 5px;
+            width: 100%;
+            outline: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="matrix-background" id="matrix"></div>
+    <div class="content">
+        <div class="terminal-container">
+            <div class="terminal-header">Terminal</div>
+            <div class="terminal-window">
+                <div id="terminal-output">
+
+                </div>
+                <div class="command-line">
+                    <span>$> </span>
+                    <input type="text" class="input-area" autofocus>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="TFR.js"></script>
+</body>
+</html>

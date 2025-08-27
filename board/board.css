@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.board-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board-frame {
+    width: 70vh;
+    height: 70vh;
+    max-width: 700px;
+    max-height: 700px;
+    background: #000;
+    border: 2px solid #fff;
+    position: relative;
+    margin-bottom: 60px;
+    box-shadow: none;
+}
+
+.board-background {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/board_main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: none;
+}
+
+.board-shadow {
+    display: none;
+}
+
+.paper-notes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.paper-note {
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    background-image: url('images/paper1.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+}
+
+.paper-note:hover {
+    transform: scale(1.02);
+    z-index: 10;
+}
+
+.paper-note .note-text {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    font-size: 9px;
+    font-family: 'Courier New', monospace;
+    color: #333;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: left;
+    line-height: 1.1;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.board-controls {
+    display: flex;
+    gap: 40px;
+}
+
+.terminal-button {
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #019394;
+    color: #019394;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.terminal-button:hover {
+    background: rgba(1, 147, 148, 0.1);
+    box-shadow: 0 0 10px rgba(1, 147, 148, 0.3);
+}
+
+/* Убираем старую лампу и заменяем освещением */
+.board-frame::after {
+    display: none;
+}
+
+/* Убираю искусственное освещение */
+.board-background::before {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0a0a0a;
+    border: 2px solid #019394;
+    padding: 30px;
+    width: 400px;
+    color: #019394;
+    font-family: 'Courier New', monospace;
+}
+
+.modal-content h3 {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.close {
+    color: #019394;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.close:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(1, 147, 148, 0.8);
+}
+
+#note-text {
+    width: 100%;
+    height: 120px;
+    background: rgba(1, 147, 148, 0.05);
+    border: 1px solid #019394;
+    color: #019394;
+    font-family: 'Courier New', monospace;
+    padding: 15px;
+    resize: vertical;
+    margin: 20px 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#note-text:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(1, 147, 148, 0.5);
+    background: rgba(1, 147, 148, 0.1);
+}
+
+#note-text::placeholder {
+    color: rgba(1, 147, 148, 0.5);
+}
+#note-text:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(1, 147, 148, 0.5);
+    background: rgba(1, 147, 148, 0.1);
+}
+
+#note-text::placeholder {
+    color: rgba(1, 147, 148, 0.5);
+}
+    color: rgba(1, 147, 148, 0.5);
+}
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(1, 147, 148, 0.8);
+}
+
+#note-text {
+    width: 100%;
+    height: 120px;
+    background: rgba(1, 147, 148, 0.05);
+    border: 1px solid #019394;
+    color: #019394;
+    font-family: 'Courier New', monospace;
+    padding: 15px;
+    resize: vertical;
+    margin: 20px 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#note-text:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(1, 147, 148, 0.5);
+    background: rgba(1, 147, 148, 0.1);
+}
+
+#note-text::placeholder {
+    color: rgba(1, 147, 148, 0.5);
+}

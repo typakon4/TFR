@@ -1,1 +1,220 @@
-const _0x41ae38=_0x4504;(function(_0x3fb4a0,_0x46e25f){const _0x174104=_0x4504,_0x82271c=_0x3fb4a0();while(!![]){try{const _0x145d50=-parseInt(_0x174104(0x170))/0x1*(-parseInt(_0x174104(0x13f))/0x2)+-parseInt(_0x174104(0x133))/0x3+parseInt(_0x174104(0x15c))/0x4+-parseInt(_0x174104(0x13a))/0x5*(-parseInt(_0x174104(0x16f))/0x6)+-parseInt(_0x174104(0x15b))/0x7+-parseInt(_0x174104(0x15d))/0x8*(parseInt(_0x174104(0x14f))/0x9)+parseInt(_0x174104(0x174))/0xa;if(_0x145d50===_0x46e25f)break;else _0x82271c['push'](_0x82271c['shift']());}catch(_0x9e26af){_0x82271c['push'](_0x82271c['shift']());}}}(_0x384b,0x4e052));function _0x4504(_0x183cd4,_0xe133e6){const _0x384bb3=_0x384b();return _0x4504=function(_0x450408,_0x2b372a){_0x450408=_0x450408-0x12b;let _0x3e51f2=_0x384bb3[_0x450408];return _0x3e51f2;},_0x4504(_0x183cd4,_0xe133e6);}const canvas=document[_0x41ae38(0x16d)](_0x41ae38(0x165)),context=canvas[_0x41ae38(0x157)]('2d');function _0x384b(){const _0xd55599=['addEventListener','height','clear','open','innerHeight','play','...\x20---\x20...','242103oyxeFu','fillStyle','keydown','querySelector','Command\x20\x27','fillRect','Playing\x20interesting\x20audio\x20message...','896045CtiGIU','filter','plasma','\x27\x20executed','https://docs.plasma.to/docs/get-started/introduction/start-here','52XlFlqQ','key','kartoxa','preventDefault','findIndex','rgba(0,\x200,\x200,\x200.05)','yourm1nd','ArrowUp','textContent','innerHTML','fill','floor','matrix','Available\x20commands:\x0a1.\x20plasma\x0a2.\x20clear\x20(clear\x20the\x20screen)\x0a3.\x20help\x20(show\x20this\x20help)\x0a4.\x20submit\x20(submit\x20telegram\x20username\x20and\x20secret\x20key)','ArrowDown','focus','576gsSbRd','value','Plasma\x20PowerShell\x0a(C)\x20Plasma\x20Corporation.\x20All\x20rights\x20reserved.\x0aType\x20\x27help\x27\x20for\x20available\x20commands.','col','appendChild','push','length','terminal-output','getContext','whiteSpace','...---...','.input-area','1618652XmCXgJ','336448wrDjER','36328MInsJj','width','style','resize','typakon4','pre-line','rgba(152,\x20255,\x20152,\x200.1)','ressa','canvas','charIndex','#019394','random','vishnevi','submit\x20--tg\x20telegram_username\x20--secret\x20secret','getElementById','fromCharCode','createElement','innerWidth','12EINNka','8735OXuZtL','row','div','help','2524910GLEKEF','tr3ant','word','$>\x20','setInterval','trim'];_0x384b=function(){return _0xd55599;};return _0x384b();}document[_0x41ae38(0x16b)](_0x41ae38(0x14b))[_0x41ae38(0x153)](canvas);let width=canvas['width']=window[_0x41ae38(0x16e)],height=canvas[_0x41ae38(0x12d)]=window[_0x41ae38(0x130)];const columns=Math[_0x41ae38(0x14a)](width/0x14),drops=new Array(columns)[_0x41ae38(0x149)](0x1);context[_0x41ae38(0x134)]=_0x41ae38(0x163),context['font']='15px\x20monospace';const words=['plasma','gtrillions',_0x41ae38(0x141),_0x41ae38(0x161),_0x41ae38(0x164),_0x41ae38(0x145),'d1trexious','scene','dadayao',_0x41ae38(0x175),_0x41ae38(0x169)],interestingAudio=new Audio('interesting_audio.mp3');let wordPositions=[];function draw(){const _0x1d5b68=_0x41ae38;context['fillStyle']=_0x1d5b68(0x144),context[_0x1d5b68(0x138)](0x0,0x0,width,height),context[_0x1d5b68(0x134)]=_0x1d5b68(0x167);for(let _0x4ff4c4=0x0;_0x4ff4c4<drops[_0x1d5b68(0x155)];_0x4ff4c4++){let _0x374320;if(Math[_0x1d5b68(0x168)]()<0.2&&wordPositions[_0x1d5b68(0x143)](_0x5ed3e6=>_0x5ed3e6[_0x1d5b68(0x152)]===_0x4ff4c4)===-0x1){const _0x1ab4e9=words[Math['floor'](Math[_0x1d5b68(0x168)]()*words[_0x1d5b68(0x155)])];wordPositions['push']({'col':_0x4ff4c4,'word':_0x1ab4e9,'charIndex':0x0,'row':drops[_0x4ff4c4]}),_0x374320=_0x1ab4e9[0x0];}else{const _0x147c79=wordPositions['find'](_0xcf29e5=>_0xcf29e5[_0x1d5b68(0x152)]===_0x4ff4c4);_0x147c79&&drops[_0x4ff4c4]===_0x147c79[_0x1d5b68(0x171)]+_0x147c79['charIndex']?(_0x374320=_0x147c79[_0x1d5b68(0x176)][_0x147c79[_0x1d5b68(0x166)]],_0x147c79['charIndex']++,_0x147c79['charIndex']>=_0x147c79['word']['length']&&(wordPositions=wordPositions[_0x1d5b68(0x13b)](_0x333b64=>_0x333b64!==_0x147c79))):_0x374320=String[_0x1d5b68(0x16c)](Math[_0x1d5b68(0x168)]()*0x80);}context['fillText'](_0x374320,_0x4ff4c4*0x14,drops[_0x4ff4c4]*0x14),drops[_0x4ff4c4]*0x14>height&&Math[_0x1d5b68(0x168)]()>0.975&&(drops[_0x4ff4c4]=0x0),drops[_0x4ff4c4]++;}}window[_0x41ae38(0x178)](draw,0x32),window[_0x41ae38(0x12c)](_0x41ae38(0x160),()=>{const _0x593c76=_0x41ae38;width=canvas[_0x593c76(0x15e)]=window[_0x593c76(0x16e)],height=canvas['height']=window['innerHeight'];});if(document['querySelector']('.terminal-window')){const terminalOutput=document[_0x41ae38(0x16b)](_0x41ae38(0x156)),inputArea=document[_0x41ae38(0x136)](_0x41ae38(0x15a)),commandHistory=[];let historyIndex=-0x1;const initialMessage=document[_0x41ae38(0x16d)](_0x41ae38(0x172));initialMessage[_0x41ae38(0x148)]=_0x41ae38(0x151),initialMessage[_0x41ae38(0x15f)]['whiteSpace']=_0x41ae38(0x162),terminalOutput[_0x41ae38(0x153)](initialMessage);function executeCommand(_0x28d4ed){const _0x4e3dcf=_0x41ae38,_0x40bee4=document[_0x4e3dcf(0x16d)]('div');_0x40bee4[_0x4e3dcf(0x147)]=_0x4e3dcf(0x177)+_0x28d4ed,terminalOutput[_0x4e3dcf(0x153)](_0x40bee4);if(_0x28d4ed===_0x4e3dcf(0x159)||_0x28d4ed===_0x4e3dcf(0x132)){interestingAudio[_0x4e3dcf(0x131)]();const _0x549561=document[_0x4e3dcf(0x16d)](_0x4e3dcf(0x172));_0x549561[_0x4e3dcf(0x147)]=_0x4e3dcf(0x139),terminalOutput['appendChild'](_0x549561);return;}if(_0x28d4ed===_0x4e3dcf(0x13c)){window[_0x4e3dcf(0x12f)](_0x4e3dcf(0x13e),'_blank');return;}if(_0x28d4ed===_0x4e3dcf(0x12e)){terminalOutput['innerHTML']='';const _0x582d80=document[_0x4e3dcf(0x16d)](_0x4e3dcf(0x172));_0x582d80[_0x4e3dcf(0x148)]='Plasma\x20PowerShell\x0a(C)\x20Plasma\x20Corporation.\x20All\x20rights\x20reserved.\x0aType\x20\x27help\x27\x20for\x20available\x20commands.',_0x582d80[_0x4e3dcf(0x15f)][_0x4e3dcf(0x158)]=_0x4e3dcf(0x162),terminalOutput[_0x4e3dcf(0x153)](_0x582d80);return;}if(_0x28d4ed===_0x4e3dcf(0x173)){const _0x47f432=document[_0x4e3dcf(0x16d)](_0x4e3dcf(0x172));_0x47f432[_0x4e3dcf(0x148)]=_0x4e3dcf(0x14c),_0x47f432[_0x4e3dcf(0x15f)]['whiteSpace']=_0x4e3dcf(0x162),terminalOutput['appendChild'](_0x47f432);return;}if(_0x28d4ed==='submit'){const _0x5bce6c=document[_0x4e3dcf(0x16d)](_0x4e3dcf(0x172));_0x5bce6c[_0x4e3dcf(0x147)]=_0x4e3dcf(0x16a),terminalOutput[_0x4e3dcf(0x153)](_0x5bce6c);return;}const _0x199d36=document[_0x4e3dcf(0x16d)](_0x4e3dcf(0x172));_0x199d36['textContent']=_0x4e3dcf(0x137)+_0x28d4ed+_0x4e3dcf(0x13d),terminalOutput[_0x4e3dcf(0x153)](_0x199d36),commandHistory[_0x4e3dcf(0x154)](_0x28d4ed),historyIndex=commandHistory[_0x4e3dcf(0x155)];}inputArea[_0x41ae38(0x12c)](_0x41ae38(0x135),_0x4de5bb=>{const _0x225cd1=_0x41ae38;if(_0x4de5bb[_0x225cd1(0x140)]==='Enter'){const _0x44ab4a=inputArea[_0x225cd1(0x150)][_0x225cd1(0x12b)]();_0x44ab4a&&(executeCommand(_0x44ab4a),inputArea[_0x225cd1(0x150)]='');}else{if(_0x4de5bb[_0x225cd1(0x140)]===_0x225cd1(0x146))_0x4de5bb['preventDefault'](),historyIndex>0x0&&(historyIndex--,inputArea[_0x225cd1(0x150)]=commandHistory[historyIndex]);else _0x4de5bb[_0x225cd1(0x140)]===_0x225cd1(0x14d)&&(_0x4de5bb[_0x225cd1(0x142)](),historyIndex<commandHistory[_0x225cd1(0x155)]-0x1?(historyIndex++,inputArea[_0x225cd1(0x150)]=commandHistory[historyIndex]):(historyIndex=commandHistory['length'],inputArea[_0x225cd1(0x150)]=''));}}),inputArea[_0x41ae38(0x14e)]();}
+const canvas = document.createElement('canvas');
+const context = canvas.getContext('2d');
+canvas.style.position = 'fixed';
+canvas.style.top = '0';
+canvas.style.left = '0';
+canvas.style.zIndex = '1';
+canvas.style.pointerEvents = 'none';
+document.body.appendChild(canvas);
+
+let width = canvas.width = window.innerWidth;
+let height = canvas.height = window.innerHeight;
+
+const columns = Math.floor(width / 20);
+const drops = new Array(columns).fill(1);
+
+context.fillStyle = 'rgba(152, 255, 152, 0.1)';
+context.font = '15px monospace';
+
+const words = ['plasma', 'gtrillions', 'kartoxa', 'typakon4', 'ressa', 'yourm1nd', 'd1trexious', 'scene', 'dadayao', 'tr3ant', 'vishnevi']; 
+
+const interestingAudio = new Audio('interesting_audio.mp3');
+
+let wordPositions = [];
+
+function draw() {
+    context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+    context.fillRect(0, 0, width, height);
+
+    context.fillStyle = '#019394';
+    for (let i = 0; i < drops.length; i++) {
+        let text;
+        if (Math.random() < 0.2 && wordPositions.findIndex(wp => wp.col === i) === -1) { // 20% chance to start a word
+            const word = words[Math.floor(Math.random() * words.length)];
+            wordPositions.push({ col: i, word: word, charIndex: 0, row: drops[i] });
+            text = word[0];
+        } else {
+            const wordAtColumn = wordPositions.find(wp => wp.col === i);
+            if (wordAtColumn && drops[i] === wordAtColumn.row + wordAtColumn.charIndex) {
+                text = wordAtColumn.word[wordAtColumn.charIndex];
+                wordAtColumn.charIndex++;
+                if (wordAtColumn.charIndex >= wordAtColumn.word.length) {
+                    wordPositions = wordPositions.filter(wp => wp !== wordAtColumn);
+                }
+            } else {
+                text = String.fromCharCode(Math.random() * 128);
+            }
+        }
+        context.fillText(text, i * 20, drops[i] * 20);
+        
+        if (drops[i] * 20 > height && Math.random() > 0.975) {
+            drops[i] = 0;
+        }
+        drops[i]++;
+    }
+}
+
+window.setInterval(draw, 50);
+
+window.addEventListener('resize', () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+    const newColumns = Math.floor(width / 20);
+    if (newColumns !== columns) {
+        drops.length = newColumns;
+        for (let i = columns; i < newColumns; i++) {
+            drops[i] = 1;
+        }
+    }
+});
+
+// Add terminal functionality
+if (document.querySelector('.terminal-window')) {
+    const terminalOutput = document.getElementById('terminal-output');
+    const inputArea = document.querySelector('.input-area');
+    const commandHistory = [];
+    let historyIndex = -1;
+
+    // Add initial message
+    const initialMessage = document.createElement('div');
+    initialMessage.innerHTML = "Plasma PowerShell\n(C) Plasma Corporation. All rights reserved.\nType 'help' for available commands.";
+    initialMessage.style.whiteSpace = 'pre-line';
+    terminalOutput.appendChild(initialMessage);
+
+    function executeCommand(command) {
+        const output = document.createElement('div');
+        output.textContent = `$> ${command}`;
+        terminalOutput.appendChild(output);
+
+        if (command === '...---...' || command === '... --- ...') {
+            interestingAudio.play();
+            const response = document.createElement('div');
+            response.textContent = 'Playing interesting audio message...';
+            terminalOutput.appendChild(response);
+            return;
+        }
+
+        if (command === 'plasma') {
+            window.open('https://docs.plasma.to/docs/get-started/introduction/start-here', '_blank');
+            return;
+        }
+
+        if (command === 'clear') {
+            terminalOutput.innerHTML = '';
+            // Re-add the initial message
+            const initialMessage = document.createElement('div');
+            initialMessage.innerHTML = "Plasma PowerShell\n(C) Plasma Corporation. All rights reserved.\nType 'help' for available commands.";
+            initialMessage.style.whiteSpace = 'pre-line';
+            terminalOutput.appendChild(initialMessage);
+            return;
+        }
+
+        if (command === 'help') {
+            const helpMessage = document.createElement('div');
+            helpMessage.innerHTML = "Available commands:\n1. plasma\n2. clear (clear the screen)\n3. help (show this help)\n4. submit (submit telegram username and secret key)\n5. trillions (connect to investigation bot)";
+            helpMessage.style.whiteSpace = 'pre-line';
+            terminalOutput.appendChild(helpMessage);
+            return;
+        }
+
+        if (command === 'trillions') {
+            const response = document.createElement('div');
+            response.innerHTML = 'Connecting to investigation bot...';
+            response.style.whiteSpace = 'pre-line';
+            response.style.color = '#019394';
+            terminalOutput.appendChild(response);
+
+            // Try different server URLs
+            const serverUrls = [
+                'http://localhost:3000/api/generate-link',
+                'http://127.0.0.1:3000/api/generate-link',
+                '/api/generate-link'
+            ];
+
+            async function tryGenerateLink() {
+                for (const url of serverUrls) {
+                    try {
+                        const fetchResponse = await fetch(url, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            mode: 'cors'
+                        });
+                        
+                        if (fetchResponse.ok) {
+                            const data = await fetchResponse.json();
+                            if (data.unique_param) {
+                                const botUrl = `https://t.me/TFRhiddenbot?start=${data.unique_param}`;
+                                window.open(botUrl, '_blank');
+                                
+                                const successMsg = document.createElement('div');
+                                successMsg.innerHTML = `Generated link: ${botUrl}`;
+                                successMsg.style.color = '#019394';
+                                terminalOutput.appendChild(successMsg);
+                                return;
+                            }
+                        }
+                    } catch (error) {
+                        console.log(`Failed to connect to ${url}:`, error.message);
+                        continue;
+                    }
+                }
+                
+                // If all URLs failed, generate offline link
+                const offlineParam = Math.random().toString(36).substring(2, 18);
+                const botUrl = `https://t.me/TFRhiddenbot?start=${offlineParam}`;
+                window.open(botUrl, '_blank');
+                
+                const offlineMsg = document.createElement('div');
+                offlineMsg.innerHTML = `Server offline - Generated temporary link: ${botUrl}`;
+                offlineMsg.style.color = '#ffaa00';
+                terminalOutput.appendChild(offlineMsg);
+            }
+
+            tryGenerateLink();
+            return;
+        }
+
+        if (command === 'submit') {
+            const submitHelp = document.createElement('div');
+            submitHelp.textContent = "submit --tg telegram_username --secret secret";
+            terminalOutput.appendChild(submitHelp);
+            return;
+        }
+
+        const response = document.createElement('div');
+        response.textContent = `Command '${command}' executed`;
+        terminalOutput.appendChild(response);
+
+        commandHistory.push(command);
+        historyIndex = commandHistory.length;
+    }
+
+    inputArea.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const command = inputArea.value.trim();
+            if (command) {
+                executeCommand(command);
+                inputArea.value = '';
+            }
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (historyIndex > 0) {
+                historyIndex--;
+                inputArea.value = commandHistory[historyIndex];
+            }
+        } else if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (historyIndex < commandHistory.length - 1) {
+                historyIndex++;
+                inputArea.value = commandHistory[historyIndex];
+            } else {
+                historyIndex = commandHistory.length;
+                inputArea.value = '';
+            }
+        }
+    });
+
+    inputArea.focus();
+}
